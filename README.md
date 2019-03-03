@@ -14,6 +14,7 @@ git clone --depth=1 https://github.com/SunYufei/OpenCV-with-Contrib-MinGW-Build 
 
 ```
 OpenCV/
+OpenCV/x64/mingw/bin
 ```
 
 ### Step 3: Add OpenCV packages to your CMakeLists.txt
@@ -23,15 +24,13 @@ cmake_minimum_required(VERSION 3.0)
 
 project(ProjectName)
 
-set(CMAKE_CXX_COMPILER g++)
+set(CMAKE_CXX_STANDARD 11)
 
 find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
-add_executable(${PROJECT_NAME} "main.cpp")
-
-target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+link_libraries(${OpenCV_LIBS})
 ```
 
 ## Thanks
