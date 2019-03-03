@@ -25,6 +25,7 @@ cmake_minimum_required(VERSION 3.0)
 project(ProjectName)
 
 set(CMAKE_CXX_STANDARD 11)
+set(OpenCV_DIRS /path/to/OpenCV)
 
 find_package(OpenCV REQUIRED)
 
