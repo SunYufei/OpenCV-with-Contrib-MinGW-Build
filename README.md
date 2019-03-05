@@ -1,5 +1,7 @@
 # OpenCV-with-Contrib-MinGW-Build
 
+> 推荐Windows用户使用`MSYS2`安装`OpenCV with Contrib`，此Repo停止更新
+
 MinGW 64bit version of OpenCV with opencv_contrib compiled on Windows.
 
 ## Install
