@@ -22,8 +22,7 @@ pacman -S mingw-w64-x86_64-opencv
 ```makefile
 CC = g++
 
-CFLAGS += -g -Wall -I/path/to/MSYS2/mingw64/include/opencv4/opencv \
-	-I/path/to/MSYS2/mingw64/include/opencv4
+CFLAGS += -g -Wall -I/path/to/MSYS2/mingw64/include/opencv4
 
 LDFLAGS += -L/path/to/MSYS2/mingw64/lib \
 	-lopencv_gapi \
